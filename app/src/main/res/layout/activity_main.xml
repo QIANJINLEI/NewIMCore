@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="#afff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/zh"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账号"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="1dp"
+            android:background="#333"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:gravity="center_vertical"
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入账号"
+            android:text="testpro23"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/zh"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="密码"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="1dp"
+            android:background="#333"
+            android:layout_height="30dp"/>
+        <EditText
+            android:gravity="center_vertical"
+            android:id="@+id/pw"
+            android:layout_width="0dp"
+            android:text="taobao1234"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入密码"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="登录"/>
+    <Button
+        android:layout_below="@id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit"
+        android:text="退出"/>
+</RelativeLayout>
